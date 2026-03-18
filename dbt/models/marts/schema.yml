@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: transactions_cleaned
+    description: "Transactions nettoyées et enrichies (merchant normalisé, direction, abs_amount)."
+    columns:
+      - name: transaction_id
+        tests:
+          - not_null
+          - unique
+      - name: user_id
+        tests: [not_null]
+      - name: booking_date
+        tests: [not_null]
+      - name: merchant
+        tests: [not_null]
+      - name: abs_amount
+        tests: [not_null]
+      - name: category_true
+        tests: [not_null]
+
+  - name: user_spending_summary
+    description: "Agrégats mensuels de dépenses par utilisateur."
+    columns:
+      - name: user_id
+        tests: [not_null]
+      - name: month
+        tests: [not_null]

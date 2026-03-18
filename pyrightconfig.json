@@ -1,0 +1,10 @@
+{
+  "include": ["api", "data", "infra", "llm", "ml", "src", "tests"],
+  "exclude": ["data/lake", "data/warehouse", "data/cache", "data/mlflow", "dbt/target", "dbt/dbt_packages"],
+  "executionEnvironments": [
+    {
+      "root": ".",
+      "extraPaths": ["src"]
+    }
+  ]
+}

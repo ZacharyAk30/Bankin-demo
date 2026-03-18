@@ -1,0 +1,1 @@
+"""Paquet utilitaire: ingestion & datasets."""

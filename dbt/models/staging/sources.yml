@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: raw_transactions
+        description: "Table brute chargée depuis le lake (JSONL)."
+        columns:
+          - name: transaction_id
+            tests:
+              - not_null
+              - unique
+          - name: user_id
+            tests:
+              - not_null
+          - name: booking_date
+            tests:
+              - not_null
+          - name: amount
+            tests:
+              - not_null
+          - name: label
+            tests:
+              - not_null
+          - name: category
+            description: "Vérité terrain (simulée) utilisée pour l’entraînement/validation."
+            tests:
+              - not_null

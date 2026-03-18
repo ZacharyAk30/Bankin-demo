@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/zacha/Documents/Bankin-demo/data/mlflow/503292621595752112/bbf7e4db8923411f8ea126aa74aaef5e/artifacts
+end_time: 1773826876761
+entry_point_name: ''
+experiment_id: '503292621595752112'
+lifecycle_stage: active
+run_id: bbf7e4db8923411f8ea126aa74aaef5e
+run_name: train_logreg_tfidf
+run_uuid: bbf7e4db8923411f8ea126aa74aaef5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773826876449
+status: 3
+tags: []
+user_id: zacha
